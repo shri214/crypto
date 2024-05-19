@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
@@ -41,6 +41,12 @@ const SignupForm = () => {
       }, 1500);
     }
   }
+  useEffect(()=>{
+    if(localStorage.getItem('loginUser') &&
+    window.location.pathname === '/sign'){
+      navigation('/dashboard')
+    }
+  })
   return (
     
       <div className="registration-container">
