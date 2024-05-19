@@ -1,0 +1,28 @@
+body {
+  color: white;
+}
+.noItem {
+  width: 40vw;
+  height: 40vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--black);
+  box-shadow: 0 0 10px 2px rgb(56, 54, 54);
+}
+.noItem h1 {
+  margin-top: 2rem;
+}
+.btns {
+  width: 300px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
